@@ -1,19 +1,19 @@
 export const HEADER_DATA_LIST = [
     {
         link: "Home",
-        path: "/",
+        path: "#home",
     },
     {
         link: "Stories",
-        path: "/stories",
+        path: "#stories",
     },
     {
         link: "Community",
-        path: "/community",
+        path: "#community",
     },
     {
         link: "Contact",
-        path: "/contact",
+        path: "#contact",
     },
 ];
 

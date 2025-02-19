@@ -8,9 +8,9 @@ const HowItWorks = () => {
     const [video, setVideo] = useState(false)
 
     return (
-        <div className="bg-gray lg:pt-32 lg:pb-36 md:py-20 sm:py-16 py-12">
+        <div id='stories' className="bg-gray lg:pt-32 lg:pb-36 md:py-20 sm:py-16 py-12">
             <div className='mx-auto max-w-[1123px] px-4'>
-                <CustomHeading customStyles='xl:mb-16 lg:mb-12 md:mb-7 mb-4 xl:h-[61px] justify-center flex flex-col' title='HOW IT WORKS' />
+                <CustomHeading customStyles='xl:mb-16 lg:mb-12 md:mb-7 max-lg:text-center mb-4 xl:h-[61px] justify-center flex flex-col' title='HOW IT WORKS' />
                 <div className={`w-full max-h-[580px] lg:justify-end flex relative ${video ? 'hidden' : ''}`}>
                     <div className="relative">
                         <Image height={580} width={1064} src="/assets/images/webp/welcome-img.webp" alt="welcome img" onClick={() => setVideo(true)} />

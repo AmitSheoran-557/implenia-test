@@ -16,12 +16,13 @@ export default {
       },
       colors: {
        "yellow":"#EBA82C",
+       "lightYellow":"#FEBE32",
        "lightBlack":"#1D1D1B",
        "red":"#FF132D",
        "gray":"#F5F5F5",
       },
       backgroundImage: {
-        "hero-pattern": "url('/assets/images/png/hero-bg.png')",
+        "hero-pattern": "url('/assets/images/webp/hero-bg.webp')",
       },
       animation: {
         'slide-in': 'slide-in 1s ease-out forwards',
