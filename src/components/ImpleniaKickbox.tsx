@@ -1,9 +1,10 @@
+"use client"
 import React from 'react'
 import CustomHeading from './common/CustomHeading'
 import Description from './common/Description'
 import { KICKBOX_DATA_LIST } from '@/utils/helper'
 import CustomButton from './common/CustomButton'
-
+import CountUp from 'react-countup'
 const ImpleniaKickbox = () => {
     return (
         <div id='community' className='flex justify-center items-center xl:pt-[129px] lg:pt-24 md:pt-16 pt-12 xl:pb-[134px] lg:pb-16 pb-12'>
@@ -14,7 +15,14 @@ const ImpleniaKickbox = () => {
                     <div className="lg:w-8/12 w-full flex max-lg:flex-wrap lg:pt-0 pt-4  items-center max-lg:justify-center lg:gap-[71px] md:gap-16 sm:gap-12 gap-8">
                         {KICKBOX_DATA_LIST.map((item, index) => (
                             <div className="max-w-max max-lg:text-center" key={index} >
-                                <p className="xl:text-[80px] lg:text-6xl max-sm:min-w-56 md:text-5xl sm:text-4xl text-3xl text-lightYellow">{item.number}</p>
+                                <h3 className="xl:text-[80px] lg:text-6xl max-sm:min-w-56 md:text-5xl sm:text-4xl text-3xl text-lightYellow">
+                                    +
+                                    <CountUp start={0}
+                                        end={Number(item.number.replace("+", ""))}
+                                        duration={3}
+                                        separator=","
+                                    />
+                                </h3>
                                 <p className="text-black font-bold lg:ps-1 xl:text-[21px] xl:mt-0.5 xl:pb-2 md:text-lg sm:text-base text-sm">{item.content}</p>
                             </div>
                         ))}
