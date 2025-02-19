@@ -18,6 +18,7 @@ export default {
        "yellow":"#EBA82C",
        "lightBlack":"#1D1D1B",
        "red":"#FF132D",
+       "gray":"#F5F5F5",
       },
       backgroundImage: {
         "hero-pattern": "url('/assets/images/png/hero-bg.png')",
