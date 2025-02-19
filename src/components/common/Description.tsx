@@ -7,7 +7,7 @@ interface DescriptionProps {
 
 const Description: React.FC<DescriptionProps> = ({ title, customStyles }) => {
     return (
-        <p className={`text-lightBlack font-light lg:text-[21px] md:text-lg text-base ${customStyles}`}>{title}</p>
+        <p className={`text-lightBlack font-light !verfont-sans lg:text-[21px] md:text-lg text-base ${customStyles}`}>{title}</p>
     );
 };
 
